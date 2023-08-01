@@ -14,6 +14,12 @@
 	import SelectMultipleInput from "$lib/inputs-binding/SelectMultipleInput.svelte";
 	import BeforeUpdateAfterUpdate from "$lib/lifecycle/BeforeUpdateAfterUpdate.svelte";
 	import Tick from "$lib/lifecycle/Tick.svelte";
+	import WritableStore from "$lib/stores/writable-store/WritableStore.svelte";
+	import ReadableStore from "$lib/stores/readable-store/ReadableStore.svelte";
+	import DerivedStore from "$lib/stores/derived-store/DerivedStore.svelte";
+	import CustomStore from "$lib/stores/custom-store/CustomStore.svelte";
+	import StoreBindings from "$lib/stores/store-bindings/StoreBindings.svelte";
+	import Tweens from "$lib/motion/tweens/Tweens.svelte";
 
 	let name = 'Svelte';
 	let src = 'shiba-inu.jpg';
@@ -156,6 +162,18 @@
 
 
 <Tick />
+
+<WritableStore />
+
+<ReadableStore />
+
+<DerivedStore />
+
+<CustomStore />
+
+<StoreBindings />
+
+<Tweens />
 <style>
 	img {
 		border-radius: 50%;
