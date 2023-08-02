@@ -20,6 +20,14 @@
 	import CustomStore from "$lib/stores/custom-store/CustomStore.svelte";
 	import StoreBindings from "$lib/stores/store-bindings/StoreBindings.svelte";
 	import Tweens from "$lib/motion/tweens/Tweens.svelte";
+	import Springs from "$lib/motion/springs/Springs.svelte";
+	import TransitionDirective from "$lib/transitions/TransitionDirective.svelte";
+	import AddingParameters from "$lib/transitions/AddingParameters.svelte";
+	import CustomCssTransitions from "$lib/transitions/CustomCssTransitions.svelte";
+	import CustomJsTransitions from "$lib/transitions/CustomJsTransitions.svelte";
+	import TransitionEvents from "$lib/transitions/TransitionEvents.svelte";
+	import GlobalTransitions from "$lib/transitions/GlobalTransitions.svelte";
+	import KeyBlocks from "$lib/transitions/key-blocks/KeyBlocks.svelte";
 
 	let name = 'Svelte';
 	let src = 'shiba-inu.jpg';
@@ -174,6 +182,30 @@
 <StoreBindings />
 
 <Tweens />
+
+<!--doesn't work, idk-->
+<Springs />
+
+<TransitionDirective />
+
+<AddingParameters />
+
+<CustomCssTransitions />
+
+<CustomJsTransitions />
+
+<TransitionEvents />
+
+<GlobalTransitions />
+
+<KeyBlocks />
+
+<!--this is how you pass data to child component -->
+<!--<script>-->
+<!--	import Child from './Child.svelte'-->
+<!--</script>-->
+
+<!--<Child propValue="Pass this to the child!" />-->
 <style>
 	img {
 		border-radius: 50%;
